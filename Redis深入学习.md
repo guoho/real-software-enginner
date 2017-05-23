@@ -35,8 +35,12 @@ redis可实现最基本的消息订阅及发布，从而实现简单的消息队
 ### 八、Redis长连接与连接池
 对于Redis服务，通常我们推荐用户使用长连接来访问Redis，但是由于某些用户在连接池失效的时候还是会建立大量的短连接或者用户由于客户端限制还是只能使用短连接来访问Redis，而原生的Redis在频繁建立短连接的时候有一定性能损耗，本文从源码角度对Redis短连接的性能进行了优化
 参考文章： https://yq.aliyun.com/articles/62593
+### 九、Redis高级应用
 
-### 九、Redis参考学习资料
+
+* 使用Redis bitmaps进行快速、简单、实时统计
+
+### 十、Redis参考学习资料
 
 * 官网：https://redis.io/
 * 中文社区：http://www.redis.cn/

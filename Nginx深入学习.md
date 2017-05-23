@@ -26,6 +26,8 @@
 
 * 限制某个IP的访问，设置IP白名单，设置IP黑名单
 * 限制某个IP同一时间段的访问次数
+* [Nginx Lua Redis防止CC攻击](http://www.linuxeye.com/security/nginx-lua-redis-waf.html)
+* [如何通过配置NGINX和NGINX Plus来缓解DDoS攻击？](http://soledede.iteye.com/blog/2040189)
 * 等手段实现简单防DDOS攻击，具体的可看相关的详细资料。
 
 ### Nginx地址重写
