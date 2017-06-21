@@ -40,6 +40,10 @@ nginx通过ngx_http_rewrite_module模块支持url重写、支持if条件判断
  * 缓存问题导致后端Session串号，由于使用的缓存机制，可能会出现Sesssion串号的问题。
   
 
+### Nginx与Memcache区别
+
+* [Memcache及Redis的网络原理，存储原理，IO原理，数据结构原理区别](http://www.360doc.com/content/17/0303/13/33667232_633622783.shtml)
+* http://gnucto.blog.51cto.com/3391516/998509
 
 
 ### 参考文章：
