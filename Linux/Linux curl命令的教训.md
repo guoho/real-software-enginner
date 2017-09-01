@@ -2,6 +2,18 @@
 
 这是为什么呢，一查才知道。原来加上双引号可以防止转义，因为在linux中使用&会使命令后台运行，所以必须对&进行转义，加反斜杠的方式比较麻烦，故使用双引号模式最方便。
 
+附：Linux下使用curl访问带多参数，GET掉参数解决方案：
 
+> 
+>   以url为 http://www.mysite.com/index.php?ac=33&bb=44&cc=89
+> 以浏览器的形式访问，使用GET是可以获取到所有参数的。
+> 
+> curl -s http://www.mysite.com/index.php?ac=33&bb=44&cc=89
+> 在linux下，上面的例子只能获取到参数 ac 其中&后面所有其它的参数都获取不到，原因是在linux shell中 & 符合表示后台运行，所以必须要对&进行转义才能获取到所有参数：
+> curl -s http://www.mysite.com/index.php?ac=33\&bb=44\&cc=89
+> 
+> 但这种操作太麻烦了，最简单的方法使用双引号把整个url参数引起来就OK了。
+> curl -s "http://www.mysite.com/index.php?ac=33\&bb=44\&cc=89"
+> 
 
-
+对于curl参数的更多其它操作，大家可以自行百度，此处不再详解。
